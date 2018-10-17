@@ -10,9 +10,9 @@ Via Go Get
 ## Usage
 
 ```
-	client := reactivehub.BuildClient("<team-name>", "<your-client-key>", "<your-client-secret>")
-	var payload = []byte(`{ "name": "my-name" } `)
-	result := reactivehub.SendRequest(client, "my-event", payload)
+client := reactivehub.BuildClient("<team-name>", "<your-client-key>", "<your-client-secret>")
+var payload = []byte(`{ "name": "my-name" } `)
+result := reactivehub.SendRequest(client, "my-event", payload)
 
 ```
 
