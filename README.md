@@ -1,6 +1,6 @@
-# reactivehub.io .NET-Core SDK
+# reactivehub.io Go SDK
 
-The reactivehub.io .NET-Core SDK implements the methods to publish in [Event](https://docs.reactivehub.io/guide/events) api 
+The reactivehub.io Go SDK implements the methods to publish in [Event](https://docs.reactivehub.io/guide/events) api 
 
 ## Installation
 
