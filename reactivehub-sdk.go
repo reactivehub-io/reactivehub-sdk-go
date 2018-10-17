@@ -13,11 +13,11 @@ type ClientConfig struct {
 	ClientSecret string
 }
 
-func buildClient(namespace string, clientKey string, clientSecret string) ClientConfig {
+func BuildClient(namespace string, clientKey string, clientSecret string) ClientConfig {
 	return ClientConfig{Namespace: namespace, ClientKey: clientKey, ClientSecret: clientSecret}
 }
 
-func sendRequest(client ClientConfig, eventName string, payload []byte) string {
+func SendRequest(client ClientConfig, eventName string, payload []byte) string {
 	URL := fmt.Sprintf("https://%s.reactivehub.io/event/%s", client.Namespace, eventName)
 	fmt.Println(URL)
 
@@ -39,4 +39,8 @@ func sendRequest(client ClientConfig, eventName string, payload []byte) string {
 	body, _ := ioutil.ReadAll(resp.Body)
 
 	return string(body)
+}
+
+func main() {
+
 }
