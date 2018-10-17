@@ -4,11 +4,18 @@ The reactivehub.io Go SDK implements the methods to publish in [Event](https://d
 
 ## Installation
 
-Via Nuget
-``` PM> Install-Package Reactivehub -Version 1.0.0 ```
+Via Go Get
+``` $ go get -u github.com/reactivehub-io/reactivehub-sdk-go ```
 
 ## Usage
-TO-DO
+
+```
+	client := reactivehub.BuildClient("<team-name>", "<your-client-key>", "<your-client-secret>")
+	var payload = []byte(`{ "name": "my-name" } `)
+	result := reactivehub.SendRequest(client, "my-event", payload)
+
+```
+
 ## How to contribute
 We'd love to accept your patches and contributions to this project. There are just a few small guidelines you need to follow.
 
