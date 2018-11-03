@@ -40,7 +40,3 @@ func SendRequest(client ClientConfig, eventName string, payload []byte) string {
 
 	return string(body)
 }
-
-func main() {
-
-}
