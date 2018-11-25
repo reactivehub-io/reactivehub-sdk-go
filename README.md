@@ -11,10 +11,10 @@ Via Go Get
 
 ```
 client := reactivehub.BuildClient("<team-name>", "<your-client-key>", "<your-client-secret>")
-var payload = []byte(`{ "name": "my-name" } `)
 ```
 The payload always should be of type ```byte[]```
 ```
+var payload = []byte(`{ "name": "my-name" } `)
 result := reactivehub.PublishEvent(client, "my-event", payload)
 
 ```
